@@ -13,6 +13,8 @@
 		72E014B22691D3420011DD8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72E014B02691D3420011DD8F /* Main.storyboard */; };
 		72E014B42691D3430011DD8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72E014B32691D3430011DD8F /* Assets.xcassets */; };
 		72E014B72691D3430011DD8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72E014B52691D3430011DD8F /* LaunchScreen.storyboard */; };
+		72E014C02691DED90011DD8F /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E014BF2691DED90011DD8F /* Concentration.swift */; };
+		72E014CC2691DFB00011DD8F /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E014CB2691DFB00011DD8F /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		72E014B32691D3430011DD8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72E014B62691D3430011DD8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72E014B82691D3430011DD8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72E014BF2691DED90011DD8F /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
+		72E014CB2691DFB00011DD8F /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,57 @@
 		72E014A92691D3420011DD8F /* Concentration */ = {
 			isa = PBXGroup;
 			children = (
-				72E014AA2691D3420011DD8F /* AppDelegate.swift */,
-				72E014AC2691D3420011DD8F /* SceneDelegate.swift */,
-				72E014AE2691D3420011DD8F /* ViewController.swift */,
-				72E014B02691D3420011DD8F /* Main.storyboard */,
-				72E014B32691D3430011DD8F /* Assets.xcassets */,
-				72E014B52691D3430011DD8F /* LaunchScreen.storyboard */,
-				72E014B82691D3430011DD8F /* Info.plist */,
+				72E014C42691DF060011DD8F /* Resources */,
+				72E014C22691DEF40011DD8F /* Supporting files */,
+				72E014C52691DF110011DD8F /* Model */,
+				72E014C72691DF160011DD8F /* View */,
+				72E014C82691DF1B0011DD8F /* Controller */,
 			);
 			path = Concentration;
+			sourceTree = "<group>";
+		};
+		72E014C22691DEF40011DD8F /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				72E014AA2691D3420011DD8F /* AppDelegate.swift */,
+				72E014AC2691D3420011DD8F /* SceneDelegate.swift */,
+				72E014B82691D3430011DD8F /* Info.plist */,
+				72E014B52691D3430011DD8F /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		72E014C42691DF060011DD8F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				72E014B32691D3430011DD8F /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		72E014C52691DF110011DD8F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				72E014BF2691DED90011DD8F /* Concentration.swift */,
+				72E014CB2691DFB00011DD8F /* Card.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		72E014C72691DF160011DD8F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				72E014B02691D3420011DD8F /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		72E014C82691DF1B0011DD8F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				72E014AE2691D3420011DD8F /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +184,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				72E014AF2691D3420011DD8F /* ViewController.swift in Sources */,
+				72E014C02691DED90011DD8F /* Concentration.swift in Sources */,
+				72E014CC2691DFB00011DD8F /* Card.swift in Sources */,
 				72E014AB2691D3420011DD8F /* AppDelegate.swift in Sources */,
 				72E014AD2691D3420011DD8F /* SceneDelegate.swift in Sources */,
 			);
@@ -288,7 +336,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S5BRB6N3TF;
-				INFOPLIST_FILE = Concentration/Info.plist;
+				INFOPLIST_FILE = "Concentration/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +355,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S5BRB6N3TF;
-				INFOPLIST_FILE = Concentration/Info.plist;
+				INFOPLIST_FILE = "Concentration/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
